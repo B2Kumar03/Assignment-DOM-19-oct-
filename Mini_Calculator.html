@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #inputbox1{
+            height: 40px;
+            width: 400px;
+            font-size: 50px;
+            padding: 10px;
+            margin-left: 200px;
+            border: 2px solid  #808080;
+            border-radius: 5px;
+        }
+        #inputbox2{
+            height: 40px;
+            width: 400px;
+            font-size: 50px;
+            padding: 10px;
+            margin-left: 20px;
+            border: 2px solid  #808080;
+            border-radius: 5px;
+
+        }
+        .butt1{
+            height: 60px;
+            width:150px;
+            font-size: 30px;
+            margin-top: 20px;
+            margin-left: 300px;
+        }
+        .butt2{
+            height: 60px;
+            width:150px;
+            font-size: 30px;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+        .butt3{
+            height: 60px;
+            width:150px;
+            font-size: 30px;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+        .butt4{
+            height: 60px;
+            width:150px;
+            font-size: 30px;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="enter 1st Number" id="inputbox1">
+    <input type="text" placeholder="enter 1st Number" id="inputbox2"><br>
+    <button class="butt1" onclick="add()">Add</button>
+    <button class="butt2" onclick="sub()">Subtract</button>
+    <button class="butt3" onclick="mul()">Multiply</button>
+    <button class="butt4" onclick="div()">Devide</button>
+</body>
+<script>
+    var input1=document.getElementById('inputbox1')
+    var input2=document.getElementById('inputbox2')
+    console.log(input1)
+    function add(){
+        var a=input1.value
+        var b=input2.value
+        var c=parseInt(a)+parseInt(b)
+        alert(c)
+    }
+    function mul(){
+        var a=input1.value
+        var b=input2.value
+        var c=parseInt(a)*parseInt(b)
+        alert(c)
+    }
+    function sub(){
+        var a=input1.value
+        var b=input2.value
+        var c=parseInt(a)-parseInt(b)
+        alert(c)
+    }
+    function div(){
+        var a=input1.value
+        var b=input2.value
+        var c=parseInt(a)/parseInt(b)
+        alert(c)
+    }
+</script>
+</html>
